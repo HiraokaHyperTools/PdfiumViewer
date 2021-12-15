@@ -455,6 +455,32 @@ namespace PdfiumViewer
             }
         }
 
+        public static uint FPDFText_GetBoundedText(IntPtr page, double left, double top, double right,
+                double bottom, byte[] buffer, int buflen)
+        {
+            lock (LockString)
+            {
+                return Imports.FPDFText_GetBoundedText(page, left, top, right, bottom, buffer, buflen);
+            }
+        }
+
+        public static void FPDFText_GetRect(IntPtr page, int rect_index, out double left, out double top,
+                        out double right, out double bottom)
+        {
+            lock (LockString)
+            {
+                Imports.FPDFText_GetRect(page, rect_index, out left, out top, out right, out bottom);
+            }
+        }
+
+        public static int FPDFText_CountRects(IntPtr page, int start_index, int count)
+        {
+            lock (LockString)
+            {
+                return Imports.FPDFText_CountRects(page, start_index, count);
+            }
+        }
+
         #region Save / Edit Methods
 
         public static void FPDFPage_SetRotation(IntPtr page, PdfRotation rotation)
@@ -752,6 +778,17 @@ namespace PdfiumViewer
 
             [DllImport("pdfium.dll")]
             public static extern uint FPDF_GetMetaText(IntPtr document, string tag, byte[] buffer, uint buflen);
+
+            [DllImport("pdfium.dll")]
+            public static extern uint FPDFText_GetBoundedText(IntPtr page, double left, double top, double right,
+                double bottom, byte[] buffer, int buflen);
+
+            [DllImport("pdfium.dll")]
+            public static extern void FPDFText_GetRect(IntPtr page, int rect_index, out double left, out double top,
+                out double right, out double bottom);
+
+            [DllImport("pdfium.dll")]
+            public static extern int FPDFText_CountRects(IntPtr page, int start_index, int count);
 
             #region Save/Edit APIs
 

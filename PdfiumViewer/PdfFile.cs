@@ -497,6 +497,62 @@ namespace PdfiumViewer
             return FPDFEncoding.GetString(result, 0, textSpan.Length * 2);
         }
 
+        public IEnumerable<PdfTextAndRect> GetPdfTextAndRects(int page)
+        {
+            var list = new List<PdfTextAndRect>();
+
+            using (var pageData = new PageData(_document, _form, page))
+            {
+                int numChars = NativeMethods.FPDFText_CountChars(pageData.TextPage);
+                int numRects = NativeMethods.FPDFText_CountRects(pageData.TextPage, 0, numChars);
+
+                for (int x = 0; x < numRects; x++)
+                {
+                    NativeMethods.FPDFText_GetRect(pageData.TextPage, x,
+                        out double left, out double top,
+                        out double right, out double bottom);
+
+                    var textLen = Convert.ToInt32(
+                        NativeMethods.FPDFText_GetBoundedText(pageData.TextPage, left, top, right, bottom, null, 0)
+                    );
+
+                    var buffer = new byte[(textLen + 1) * 2];
+
+                    NativeMethods.FPDFText_GetBoundedText(pageData.TextPage, left, top, right, bottom, buffer, textLen);
+
+                    list.Add(
+                        new PdfTextAndRect(
+                            FPDFEncoding.GetString(buffer, 0, 2 * textLen),
+                            RectangleF.FromLTRB((float)left, (float)bottom, (float)right, (float)top)
+                        )
+                    );
+                }
+            }
+
+            return list.AsReadOnly();
+        }
+
+        public string GetBoundedText(int page, RectangleF rect)
+        {
+            using (var pageData = new PageData(_document, _form, page))
+            {
+                var left = rect.Left;
+                var top = rect.Bottom;
+                var right = rect.Right;
+                var bottom = rect.Top;
+
+                var textLen = Convert.ToInt32(
+                    NativeMethods.FPDFText_GetBoundedText(pageData.TextPage, left, top, right, bottom, null, 0)
+                );
+
+                var buffer = new byte[(textLen + 1) * 2];
+
+                NativeMethods.FPDFText_GetBoundedText(pageData.TextPage, left, top, right, bottom, buffer, textLen);
+
+                return FPDFEncoding.GetString(buffer, 0, 2 * textLen);
+            }
+        }
+
         public void DeletePage (int pageNumber)
         {
             NativeMethods.FPDFPage_Delete(_document, pageNumber);

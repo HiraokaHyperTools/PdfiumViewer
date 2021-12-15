@@ -436,6 +436,16 @@ namespace PdfiumViewer
             return _file.GetPdfText(page);
         }
 
+        public IEnumerable<PdfTextAndRect> GetPdfTextAndRects(int page)
+        {
+            return _file.GetPdfTextAndRects(page);
+        }
+
+        public string GetBoundedText(int page, RectangleF rect)
+        {
+            return _file.GetBoundedText(page, rect);
+        }
+
         /// <summary>
         /// Get all text matching the text span.
         /// </summary>

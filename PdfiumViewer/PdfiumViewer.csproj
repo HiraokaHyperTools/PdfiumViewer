@@ -83,6 +83,7 @@
     <Compile Include="PdfPoint.cs" />
     <Compile Include="PdfInformation.cs" />
     <Compile Include="PdfSearchManager.cs" />
+    <Compile Include="PdfTextAndRect.cs" />
     <Compile Include="PdfTextSpan.cs" />
     <Compile Include="StreamManager.cs" />
     <Compile Include="PdfPageLink.cs" />
