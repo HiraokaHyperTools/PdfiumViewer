@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>HiraokaHyperTools.PdfiumViewer</id>
     <version>$version$</version>
     <title>PdfiumViewer</title>
-    <authors>Pieter van Ginkel</authors>
-    <owners>Pieter van Ginkel</owners>
-    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <projectUrl>http://github.com/pvginkel/PdfiumViewer</projectUrl>
+    <authors>$author$</authors>
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>https://github.com/HiraokaHyperTools/PdfiumViewer</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>PDF viewer based on the PDFium project.</description>
-    <copyright>Pieter van Ginkel © 2012-2015</copyright>
+    <summary>PDF viewer based on the PDFium project.</summary>
+    <copyright>$copyright$</copyright>
     <tags>pdf viewer pdfium</tags>
+    <repository type="git" url="https://github.com/HiraokaHyperTools/PdfiumViewer.git" branch="dev" />
+    <dependencies>
+      <group targetFramework="net20"></group>
+    </dependencies>
   </metadata>
   <files>
     <file src="bin\Release\nl\*.dll" target="lib\net20\nl" />

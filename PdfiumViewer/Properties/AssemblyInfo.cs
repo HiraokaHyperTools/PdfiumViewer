@@ -2,12 +2,12 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyInformationalVersion("0.11")]
+[assembly: AssemblyInformationalVersion("0.12")]
 
 [assembly: AssemblyTitle("PdfViewer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Pieter van Ginkel and kenjiuno")]
+[assembly: AssemblyCompany("pvginkel, kenjiuno")]
 [assembly: AssemblyProduct("PdfViewer")]
 [assembly: AssemblyCopyright("Pieter van Ginkel © 2012-2017, kenjiuno © 2021")]
 [assembly: AssemblyTrademark("")]
