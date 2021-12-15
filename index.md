@@ -1,3 +1,3 @@
 # PdfiumViewer
 
-Links: [Doxygen docs](docs/index.html)
+Links: [Docs by Doxygen](html/index.html)
