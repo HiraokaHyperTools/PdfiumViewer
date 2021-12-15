@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['lcdtext_42',['LcdText',['../namespace_pdfium_viewer.html#a14fb04cf6668c90906e14cdd7dd75c65a2b877de3465341caccf2483366a78cdb',1,'PdfiumViewer']]],
-  ['limitimagecachesize_43',['LimitImageCacheSize',['../namespace_pdfium_viewer.html#a14fb04cf6668c90906e14cdd7dd75c65aa33a453dea2c9c6be49db21aa02c39b5',1,'PdfiumViewer']]],
-  ['link_44',['Link',['../class_pdfium_viewer_1_1_link_click_event_args.html#a15d1f2cd7be4b942fde7fe9581bf554f',1,'PdfiumViewer::LinkClickEventArgs']]],
-  ['linkclick_45',['LinkClick',['../class_pdfium_viewer_1_1_pdf_renderer.html#ab5aa60ed2b2fcdc5fe495c52be51d06c',1,'PdfiumViewer.PdfRenderer.LinkClick()'],['../class_pdfium_viewer_1_1_pdf_viewer.html#a1d5189ad0a07f540305f4b84f75bda3e',1,'PdfiumViewer.PdfViewer.LinkClick()']]],
-  ['linkclickeventargs_46',['LinkClickEventArgs',['../class_pdfium_viewer_1_1_link_click_event_args.html',1,'PdfiumViewer']]],
-  ['links_47',['Links',['../class_pdfium_viewer_1_1_pdf_page_links.html#a9f1bca1ddc4d01b045c9ccc953a12773',1,'PdfiumViewer::PdfPageLinks']]],
-  ['load_48',['Load',['../class_pdfium_viewer_1_1_pdf_document.html#a3fd9e67f2b523804e67400deb0f21a95',1,'PdfiumViewer.PdfDocument.Load(string path)'],['../class_pdfium_viewer_1_1_pdf_document.html#a9d123c2e9f95c2e9c8a03b31dc9de83a',1,'PdfiumViewer.PdfDocument.Load(string path, string password)'],['../class_pdfium_viewer_1_1_pdf_document.html#a1d1de2a745d1bfe45d0fa672072efd6f',1,'PdfiumViewer.PdfDocument.Load(IWin32Window owner, string path)'],['../class_pdfium_viewer_1_1_pdf_document.html#ab2e6f646fce5a5da402878e1cb63ea99',1,'PdfiumViewer.PdfDocument.Load(IWin32Window owner, Stream stream)'],['../class_pdfium_viewer_1_1_pdf_document.html#acf1bc156bd1069052bbaf6e4eb937d05',1,'PdfiumViewer.PdfDocument.Load(Stream stream)'],['../class_pdfium_viewer_1_1_pdf_document.html#af0ad702526f5a133e3048bad0b7a34c0',1,'PdfiumViewer.PdfDocument.Load(Stream stream, string password)'],['../class_pdfium_viewer_1_1_pdf_renderer.html#a1638f7584810c9b9ee4a3238ff662c71',1,'PdfiumViewer.PdfRenderer.Load()']]]
+  ['mappedviewhandle_45',['MappedViewHandle',['../class_pdfium_viewer_1_1_native_methods_1_1_mapped_view_handle.html',1,'PdfiumViewer::NativeMethods']]],
+  ['margin_46',['Margin',['../class_pdfium_viewer_1_1_pdf_print_multiple_pages.html#a4d0b1b1151760c8bfe5197d5379810a6',1,'PdfiumViewer::PdfPrintMultiplePages']]],
+  ['markers_47',['Markers',['../class_pdfium_viewer_1_1_pdf_renderer.html#ab15ee1f60e9d834e366f1caa0530d7b7',1,'PdfiumViewer::PdfRenderer']]],
+  ['matchbordercolor_48',['MatchBorderColor',['../class_pdfium_viewer_1_1_pdf_search_manager.html#a1432aa27df79fcc5edb7ca3ee5ac613f',1,'PdfiumViewer::PdfSearchManager']]],
+  ['matchborderwidth_49',['MatchBorderWidth',['../class_pdfium_viewer_1_1_pdf_search_manager.html#a5061708e225c6af695c6c025aaccbd97',1,'PdfiumViewer::PdfSearchManager']]],
+  ['matchcase_50',['MatchCase',['../class_pdfium_viewer_1_1_pdf_search_manager.html#aa0fd1f5c4342f084cd09ea85234ec69f',1,'PdfiumViewer::PdfSearchManager']]],
+  ['matchcolor_51',['MatchColor',['../class_pdfium_viewer_1_1_pdf_search_manager.html#a748c85e8c03824163ad665bdd48c60ca',1,'PdfiumViewer::PdfSearchManager']]],
+  ['matchwholeword_52',['MatchWholeWord',['../class_pdfium_viewer_1_1_pdf_search_manager.html#a5db509702d22e709b48df1387f933bb6',1,'PdfiumViewer::PdfSearchManager']]],
+  ['memorymappedhandle_53',['MemoryMappedHandle',['../class_pdfium_viewer_1_1_native_methods_1_1_memory_mapped_handle.html',1,'PdfiumViewer::NativeMethods']]],
+  ['mode_54',['Mode',['../class_pdfium_viewer_1_1_pdf_print_settings.html#ac5d15ee84960fb3a8b1414c79b674f9c',1,'PdfiumViewer::PdfPrintSettings']]],
+  ['multiplepages_55',['MultiplePages',['../class_pdfium_viewer_1_1_pdf_print_settings.html#a2c26800ab5f1d97fcf0186fff00ab43b',1,'PdfiumViewer::PdfPrintSettings']]]
 ];

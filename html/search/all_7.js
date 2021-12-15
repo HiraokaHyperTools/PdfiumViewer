@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['highlightallmatches_35',['HighlightAllMatches',['../class_pdfium_viewer_1_1_pdf_search_manager.html#a23192da0aeac42ef2dd0322a2a3370f4',1,'PdfiumViewer::PdfSearchManager']]],
-  ['hiraokahypertools_2epdfiumviewer_36',['HiraokaHyperTools.PdfiumViewer',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['horizontal_37',['Horizontal',['../class_pdfium_viewer_1_1_pdf_print_multiple_pages.html#a409e8b6e9b983e3246c3b8dc9385099f',1,'PdfiumViewer::PdfPrintMultiplePages']]]
+  ['ipdfdocument_35',['IPdfDocument',['../interface_pdfium_viewer_1_1_i_pdf_document.html',1,'PdfiumViewer']]],
+  ['ipdfmarker_36',['IPdfMarker',['../interface_pdfium_viewer_1_1_i_pdf_marker.html',1,'PdfiumViewer']]],
+  ['isinputkey_37',['IsInputKey',['../class_pdfium_viewer_1_1_custom_scroll_control.html#ab89ddca49475d812b8d255d6d09ead57',1,'PdfiumViewer.CustomScrollControl.IsInputKey()'],['../class_pdfium_viewer_1_1_panning_zooming_scroll_control.html#a2087e2a8cec8f27ba9516ee58f31049d',1,'PdfiumViewer.PanningZoomingScrollControl.IsInputKey()']]]
 ];

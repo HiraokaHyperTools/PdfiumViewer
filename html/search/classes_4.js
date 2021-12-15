@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ipdfdocument_158',['IPdfDocument',['../interface_pdfium_viewer_1_1_i_pdf_document.html',1,'PdfiumViewer']]],
-  ['ipdfmarker_159',['IPdfMarker',['../interface_pdfium_viewer_1_1_i_pdf_marker.html',1,'PdfiumViewer']]]
+  ['mappedviewhandle_142',['MappedViewHandle',['../class_pdfium_viewer_1_1_native_methods_1_1_mapped_view_handle.html',1,'PdfiumViewer::NativeMethods']]],
+  ['memorymappedhandle_143',['MemoryMappedHandle',['../class_pdfium_viewer_1_1_native_methods_1_1_memory_mapped_handle.html',1,'PdfiumViewer::NativeMethods']]]
 ];

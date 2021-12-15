@@ -1,30 +1,5 @@
 var searchData=
 [
-  ['pagerangeform_166',['PageRangeForm',['../class_pdfium_viewer_1_1_demo_1_1_page_range_form.html',1,'PdfiumViewer::Demo']]],
-  ['panningzoomingscrollcontrol_167',['PanningZoomingScrollControl',['../class_pdfium_viewer_1_1_panning_zooming_scroll_control.html',1,'PdfiumViewer']]],
-  ['pdfbookmark_168',['PdfBookmark',['../class_pdfium_viewer_1_1_pdf_bookmark.html',1,'PdfiumViewer']]],
-  ['pdfbookmarkcollection_169',['PdfBookmarkCollection',['../class_pdfium_viewer_1_1_pdf_bookmark_collection.html',1,'PdfiumViewer']]],
-  ['pdfdocument_170',['PdfDocument',['../class_pdfium_viewer_1_1_pdf_document.html',1,'PdfiumViewer']]],
-  ['pdfexception_171',['PdfException',['../class_pdfium_viewer_1_1_pdf_exception.html',1,'PdfiumViewer']]],
-  ['pdfinformation_172',['PdfInformation',['../class_pdfium_viewer_1_1_pdf_information.html',1,'PdfiumViewer']]],
-  ['pdfiumresolveeventargs_173',['PdfiumResolveEventArgs',['../class_pdfium_viewer_1_1_pdfium_resolve_event_args.html',1,'PdfiumViewer']]],
-  ['pdfiumresolver_174',['PdfiumResolver',['../class_pdfium_viewer_1_1_pdfium_resolver.html',1,'PdfiumViewer']]],
-  ['pdfmarker_175',['PdfMarker',['../class_pdfium_viewer_1_1_pdf_marker.html',1,'PdfiumViewer']]],
-  ['pdfmarkercollection_176',['PdfMarkerCollection',['../class_pdfium_viewer_1_1_pdf_marker_collection.html',1,'PdfiumViewer']]],
-  ['pdfmatch_177',['PdfMatch',['../class_pdfium_viewer_1_1_pdf_match.html',1,'PdfiumViewer']]],
-  ['pdfmatches_178',['PdfMatches',['../class_pdfium_viewer_1_1_pdf_matches.html',1,'PdfiumViewer']]],
-  ['pdfpagelink_179',['PdfPageLink',['../class_pdfium_viewer_1_1_pdf_page_link.html',1,'PdfiumViewer']]],
-  ['pdfpagelinks_180',['PdfPageLinks',['../class_pdfium_viewer_1_1_pdf_page_links.html',1,'PdfiumViewer']]],
-  ['pdfpoint_181',['PdfPoint',['../struct_pdfium_viewer_1_1_pdf_point.html',1,'PdfiumViewer']]],
-  ['pdfprintmultiplepages_182',['PdfPrintMultiplePages',['../class_pdfium_viewer_1_1_pdf_print_multiple_pages.html',1,'PdfiumViewer']]],
-  ['pdfprintsettings_183',['PdfPrintSettings',['../class_pdfium_viewer_1_1_pdf_print_settings.html',1,'PdfiumViewer']]],
-  ['pdfrangedocument_184',['PdfRangeDocument',['../class_pdfium_viewer_1_1_demo_1_1_pdf_range_document.html',1,'PdfiumViewer::Demo']]],
-  ['pdfrectangle_185',['PdfRectangle',['../struct_pdfium_viewer_1_1_pdf_rectangle.html',1,'PdfiumViewer']]],
-  ['pdfrenderer_186',['PdfRenderer',['../class_pdfium_viewer_1_1_pdf_renderer.html',1,'PdfiumViewer']]],
-  ['pdfsearchmanager_187',['PdfSearchManager',['../class_pdfium_viewer_1_1_pdf_search_manager.html',1,'PdfiumViewer']]],
-  ['pdftextandrect_188',['PdfTextAndRect',['../class_pdfium_viewer_1_1_pdf_text_and_rect.html',1,'PdfiumViewer']]],
-  ['pdftextspan_189',['PdfTextSpan',['../struct_pdfium_viewer_1_1_pdf_text_span.html',1,'PdfiumViewer']]],
-  ['pdfviewer_190',['PdfViewer',['../class_pdfium_viewer_1_1_pdf_viewer.html',1,'PdfiumViewer']]],
-  ['point_191',['POINT',['../struct_pdfium_viewer_1_1_native_methods_1_1_p_o_i_n_t.html',1,'PdfiumViewer::NativeMethods']]],
-  ['printmultiplepagesform_192',['PrintMultiplePagesForm',['../class_pdfium_viewer_1_1_demo_1_1_print_multiple_pages_form.html',1,'PdfiumViewer::Demo']]]
+  ['scrollinfo_169',['SCROLLINFO',['../class_pdfium_viewer_1_1_native_methods_1_1_s_c_r_o_l_l_i_n_f_o.html',1,'PdfiumViewer::NativeMethods']]],
+  ['setcursoreventargs_170',['SetCursorEventArgs',['../class_pdfium_viewer_1_1_set_cursor_event_args.html',1,'PdfiumViewer']]]
 ];

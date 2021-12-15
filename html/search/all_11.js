@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uri_144',['Uri',['../class_pdfium_viewer_1_1_pdf_page_link.html#a315bf547aba7f6d1a32360415389fb4d',1,'PdfiumViewer::PdfPageLink']]]
+  ['vertical_128',['Vertical',['../class_pdfium_viewer_1_1_pdf_print_multiple_pages.html#a4400eef522013415145e3a9d35da51fc',1,'PdfiumViewer::PdfPrintMultiplePages']]]
 ];
