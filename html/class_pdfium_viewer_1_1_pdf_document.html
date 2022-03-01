@@ -129,11 +129,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17ca621d30026c92782fadf07c0ddf51"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#a17ca621d30026c92782fadf07c0ddf51">GetPdfText</a> (int page)</td></tr>
 <tr class="memdesc:a17ca621d30026c92782fadf07c0ddf51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all text on the page.  <a href="class_pdfium_viewer_1_1_pdf_document.html#a17ca621d30026c92782fadf07c0ddf51">More...</a><br /></td></tr>
 <tr class="separator:a17ca621d30026c92782fadf07c0ddf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4066c3089886e4dc752394e7d0b48948"><td class="memItemLeft" align="right" valign="top"><a id="a4066c3089886e4dc752394e7d0b48948"></a>
-IEnumerable&lt; <a class="el" href="class_pdfium_viewer_1_1_pdf_text_and_rect.html">PdfTextAndRect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPdfTextAndRects</b> (int page)</td></tr>
+<tr class="memitem:a4066c3089886e4dc752394e7d0b48948"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="class_pdfium_viewer_1_1_pdf_text_and_rect.html">PdfTextAndRect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#a4066c3089886e4dc752394e7d0b48948">GetPdfTextAndRects</a> (int page)</td></tr>
+<tr class="memdesc:a4066c3089886e4dc752394e7d0b48948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all text and corresponding bounding box on the page.  <a href="class_pdfium_viewer_1_1_pdf_document.html#a4066c3089886e4dc752394e7d0b48948">More...</a><br /></td></tr>
 <tr class="separator:a4066c3089886e4dc752394e7d0b48948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39913b15017a28f028129ce93b4ef363"><td class="memItemLeft" align="right" valign="top"><a id="a39913b15017a28f028129ce93b4ef363"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoundedText</b> (int page, RectangleF rect)</td></tr>
+<tr class="memitem:a39913b15017a28f028129ce93b4ef363"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#a39913b15017a28f028129ce93b4ef363">GetBoundedText</a> (int page, RectangleF rect)</td></tr>
+<tr class="memdesc:a39913b15017a28f028129ce93b4ef363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all text which touches hit box.  <a href="class_pdfium_viewer_1_1_pdf_document.html#a39913b15017a28f028129ce93b4ef363">More...</a><br /></td></tr>
 <tr class="separator:a39913b15017a28f028129ce93b4ef363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e63a25a482784a2f37fac3bcbfe3ff8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#a3e63a25a482784a2f37fac3bcbfe3ff8">GetPdfText</a> (<a class="el" href="struct_pdfium_viewer_1_1_pdf_text_span.html">PdfTextSpan</a> textSpan)</td></tr>
 <tr class="memdesc:a3e63a25a482784a2f37fac3bcbfe3ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all text matching the text span.  <a href="class_pdfium_viewer_1_1_pdf_document.html#a3e63a25a482784a2f37fac3bcbfe3ff8">More...</a><br /></td></tr>
@@ -169,8 +169,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoundedText</b> 
 <tr class="memdesc:a5c51f8bb8dee5a8b9bd8d3049e5f3bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the page from the PDF document.  <a href="class_pdfium_viewer_1_1_pdf_document.html#a5c51f8bb8dee5a8b9bd8d3049e5f3bea">More...</a><br /></td></tr>
 <tr class="separator:a5c51f8bb8dee5a8b9bd8d3049e5f3bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab741bd8006fb5a45245678f201d3241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#aab741bd8006fb5a45245678f201d3241">RotatePage</a> (int page, <a class="el" href="namespace_pdfium_viewer.html#ab7964f2968629c7783537c1ce6102ad5">PdfRotation</a> rotation)</td></tr>
-<tr class="memdesc:aab741bd8006fb5a45245678f201d3241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the page.  <a href="class_pdfium_viewer_1_1_pdf_document.html#aab741bd8006fb5a45245678f201d3241">More...</a><br /></td></tr>
+<tr class="memdesc:aab741bd8006fb5a45245678f201d3241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation of the page.  <a href="class_pdfium_viewer_1_1_pdf_document.html#aab741bd8006fb5a45245678f201d3241">More...</a><br /></td></tr>
 <tr class="separator:aab741bd8006fb5a45245678f201d3241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2052ff5c6a30829868dce139410c88d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_pdfium_viewer.html#ab7964f2968629c7783537c1ce6102ad5">PdfRotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#a2052ff5c6a30829868dce139410c88d0">GetPageRotation</a> (int page)</td></tr>
+<tr class="memdesc:a2052ff5c6a30829868dce139410c88d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rotation of the page.  <a href="class_pdfium_viewer_1_1_pdf_document.html#a2052ff5c6a30829868dce139410c88d0">More...</a><br /></td></tr>
+<tr class="separator:a2052ff5c6a30829868dce139410c88d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae194cae73b2f9d46c635a4c993403f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#ae194cae73b2f9d46c635a4c993403f9c">ImportPages</a> (<a class="el" href="class_pdfium_viewer_1_1_pdf_document.html">PdfDocument</a> source, string pageRange, int startDestIndex)</td></tr>
+<tr class="memdesc:ae194cae73b2f9d46c635a4c993403f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import pages from source document.  <a href="class_pdfium_viewer_1_1_pdf_document.html#ae194cae73b2f9d46c635a4c993403f9c">More...</a><br /></td></tr>
+<tr class="separator:ae194cae73b2f9d46c635a4c993403f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525af44981bb5511921daf3b341ad54d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#a525af44981bb5511921daf3b341ad54d">CopyPages</a> (string pageRange, int startDestIndex)</td></tr>
+<tr class="memdesc:a525af44981bb5511921daf3b341ad54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy pages within this document.  <a href="class_pdfium_viewer_1_1_pdf_document.html#a525af44981bb5511921daf3b341ad54d">More...</a><br /></td></tr>
+<tr class="separator:a525af44981bb5511921daf3b341ad54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa27bfbf6ef8529c68123ad607f14cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pdfium_viewer_1_1_pdf_information.html">PdfInformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#aaa27bfbf6ef8529c68123ad607f14cf6">GetInformation</a> ()</td></tr>
 <tr class="memdesc:aaa27bfbf6ef8529c68123ad607f14cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get metadata information from the PDF document.  <a href="class_pdfium_viewer_1_1_pdf_document.html#aaa27bfbf6ef8529c68123ad607f14cf6">More...</a><br /></td></tr>
 <tr class="separator:aaa27bfbf6ef8529c68123ad607f14cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +207,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af0ad702526f5a133e3048bad0b7a34c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_pdfium_viewer_1_1_pdf_document.html">PdfDocument</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#af0ad702526f5a133e3048bad0b7a34c0">Load</a> (Stream stream, string password)</td></tr>
 <tr class="memdesc:af0ad702526f5a133e3048bad0b7a34c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_pdfium_viewer_1_1_pdf_document.html" title="Provides functionality to render a PDF document.">PdfDocument</a> class with the provided stream.  <a href="class_pdfium_viewer_1_1_pdf_document.html#af0ad702526f5a133e3048bad0b7a34c0">More...</a><br /></td></tr>
 <tr class="separator:af0ad702526f5a133e3048bad0b7a34c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bc6707ddd3c4b96460936cad4f9f91"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_pdfium_viewer_1_1_pdf_document.html">PdfDocument</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html#ae8bc6707ddd3c4b96460936cad4f9f91">Compose</a> (<a class="el" href="class_pdfium_viewer_1_1_pdf_document.html">PdfDocument</a> source, string pageRange)</td></tr>
+<tr class="memdesc:ae8bc6707ddd3c4b96460936cad4f9f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose new document from existing document and page ranges.  <a href="class_pdfium_viewer_1_1_pdf_document.html#ae8bc6707ddd3c4b96460936cad4f9f91">More...</a><br /></td></tr>
+<tr class="separator:ae8bc6707ddd3c4b96460936cad4f9f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -230,6 +242,89 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides functionality to render a PDF document. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae8bc6707ddd3c4b96460936cad4f9f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bc6707ddd3c4b96460936cad4f9f91">&#9670;&nbsp;</a></span>Compose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_pdfium_viewer_1_1_pdf_document.html">PdfDocument</a> PdfiumViewer.PdfDocument.Compose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html">PdfDocument</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>pageRange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compose new document from existing document and page ranges. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>The source document</td></tr>
+    <tr><td class="paramname">pageRange</td><td><code>1,2-3</code> and so on, or null for entire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New document</dd></dl>
+
+</div>
+</div>
+<a id="a525af44981bb5511921daf3b341ad54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525af44981bb5511921daf3b341ad54d">&#9670;&nbsp;</a></span>CopyPages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PdfiumViewer.PdfDocument.CopyPages </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>pageRange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startDestIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy pages within this document. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pageRange</td><td><code>1,2-3</code> and so on, or null for entire</td></tr>
+    <tr><td class="paramname">startDestIndex</td><td>The destination page index</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2d901f6100488019cd1e8b50aaf6ae6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d901f6100488019cd1e8b50aaf6ae6a">&#9670;&nbsp;</a></span>CreatePrintDocument() <span class="overload">[1/3]</span></h2>
 
@@ -392,6 +487,44 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a39913b15017a28f028129ce93b4ef363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39913b15017a28f028129ce93b4ef363">&#9670;&nbsp;</a></span>GetBoundedText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PdfiumViewer.PdfDocument.GetBoundedText </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RectangleF&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all text which touches hit box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>The page to get the text for.</td></tr>
+    <tr><td class="paramname">rect</td><td>The hit box</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The text.</dd></dl>
+
+</div>
+</div>
 <a id="aaa27bfbf6ef8529c68123ad607f14cf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa27bfbf6ef8529c68123ad607f14cf6">&#9670;&nbsp;</a></span>GetInformation()</h2>
 
@@ -454,6 +587,33 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a2052ff5c6a30829868dce139410c88d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2052ff5c6a30829868dce139410c88d0">&#9670;&nbsp;</a></span>GetPageRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_pdfium_viewer.html#ab7964f2968629c7783537c1ce6102ad5">PdfRotation</a> PdfiumViewer.PdfDocument.GetPageRotation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get rotation of the page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>The page index</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The page rotation</dd></dl>
+
+</div>
+</div>
 <a id="a17ca621d30026c92782fadf07c0ddf51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17ca621d30026c92782fadf07c0ddf51">&#9670;&nbsp;</a></span>GetPdfText() <span class="overload">[1/2]</span></h2>
 
@@ -512,6 +672,33 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a4066c3089886e4dc752394e7d0b48948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4066c3089886e4dc752394e7d0b48948">&#9670;&nbsp;</a></span>GetPdfTextAndRects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerable&lt;<a class="el" href="class_pdfium_viewer_1_1_pdf_text_and_rect.html">PdfTextAndRect</a>&gt; PdfiumViewer.PdfDocument.GetPdfTextAndRects </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all text and corresponding bounding box on the page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td>The page to get the text for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The text and rect on the page.</dd></dl>
+
+</div>
+</div>
 <a id="a01891aa56ca01cba16afa44446275651"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01891aa56ca01cba16afa44446275651">&#9670;&nbsp;</a></span>GetTextBounds()</h2>
 
@@ -538,6 +725,50 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The bounding rectangles.</dd></dl>
 
 <p>Implements <a class="el" href="interface_pdfium_viewer_1_1_i_pdf_document.html#ac48de1fa14b848f9e611dd13ff224be0">PdfiumViewer.IPdfDocument</a>.</p>
+
+</div>
+</div>
+<a id="ae194cae73b2f9d46c635a4c993403f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae194cae73b2f9d46c635a4c993403f9c">&#9670;&nbsp;</a></span>ImportPages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PdfiumViewer.PdfDocument.ImportPages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_pdfium_viewer_1_1_pdf_document.html">PdfDocument</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>pageRange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startDestIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Import pages from source document. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>The source document</td></tr>
+    <tr><td class="paramname">pageRange</td><td><code>1,2-3</code> and so on, or null for entire</td></tr>
+    <tr><td class="paramname">startDestIndex</td><td>The destination page index</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1428,11 +1659,11 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Rotate the page. </p>
+<p>Set rotation of the page. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">page</td><td>The page to rotate.</td></tr>
-    <tr><td class="paramname">rotation</td><td>How to rotate the page.</td></tr>
+    <tr><td class="paramname">rotation</td><td>The page rotation.</td></tr>
   </table>
   </dd>
 </dl>
