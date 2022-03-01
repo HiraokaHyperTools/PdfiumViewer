@@ -161,6 +161,17 @@ namespace PdfiumViewer
             PageSizes = new ReadOnlyCollection<SizeF>(_pageSizes);
         }
 
+        private PdfDocument(PdfFile file)
+        {
+            _file = file;
+
+            _pageSizes = _file.GetPDFDocInfo();
+            if (_pageSizes == null)
+                throw new Win32Exception();
+
+            PageSizes = new ReadOnlyCollection<SizeF>(_pageSizes);
+        }
+
         /// <summary>
         /// Renders a page of the PDF document to the provided graphics instance.
         /// </summary>
@@ -436,11 +447,22 @@ namespace PdfiumViewer
             return _file.GetPdfText(page);
         }
 
+        /// <summary>
+        /// Get all text and corresponding bounding box on the page.
+        /// </summary>
+        /// <param name="page">The page to get the text for.</param>
+        /// <returns>The text and rect on the page.</returns>
         public IEnumerable<PdfTextAndRect> GetPdfTextAndRects(int page)
         {
             return _file.GetPdfTextAndRects(page);
         }
 
+        /// <summary>
+        /// Get all text which touches hit box.
+        /// </summary>
+        /// <param name="page">The page to get the text for.</param>
+        /// <param name="rect">The hit box</param>
+        /// <returns>The text.</returns>
         public string GetBoundedText(int page, RectangleF rect)
         {
             return _file.GetBoundedText(page, rect);
@@ -566,14 +588,62 @@ namespace PdfiumViewer
         }
 
         /// <summary>
-        /// Rotate the page.
+        /// Set rotation of the page.
         /// </summary>
         /// <param name="page">The page to rotate.</param>
-        /// <param name="rotation">How to rotate the page.</param>
+        /// <param name="rotation">The page rotation.</param>
         public void RotatePage(int page, PdfRotation rotation)
         {
             _file.RotatePage(page, rotation);
             _pageSizes[page] = _file.GetPDFDocInfo(page);
+        }
+
+        /// <summary>
+        /// Get rotation of the page.
+        /// </summary>
+        /// <param name="page">The page index</param>
+        /// <returns>The page rotation</returns>
+        public PdfRotation GetPageRotation(int page)
+        {
+            return _file.GetPageRotation(page);
+        }
+
+        /// <summary>
+        /// Import pages from source document.
+        /// </summary>
+        /// <param name="source">The source document</param>
+        /// <param name="pageRange">`1,2-3` and so on, or null for entire</param>
+        /// <param name="startDestIndex">The destination page index</param>
+        public void ImportPages(PdfDocument source, string pageRange, int startDestIndex)
+        {
+            _file.ImportPages(source._file, pageRange, startDestIndex);
+            _pageSizes.Clear();
+            _pageSizes.AddRange(_file.GetPDFDocInfo());
+        }
+
+        /// <summary>
+        /// Copy pages within this document.
+        /// </summary>
+        /// <param name="pageRange">`1,2-3` and so on, or null for entire</param>
+        /// <param name="startDestIndex">The destination page index</param>
+        public void CopyPages(string pageRange, int startDestIndex)
+        {
+            _file.CopyPages(pageRange, startDestIndex);
+            _pageSizes.Clear();
+            _pageSizes.AddRange(_file.GetPDFDocInfo());
+        }
+
+        /// <summary>
+        /// Compose new document from existing document and page ranges.
+        /// </summary>
+        /// <param name="source">The source document</param>
+        /// <param name="pageRange">`1,2-3` and so on, or null for entire</param>
+        /// <returns>New document</returns>
+        public static PdfDocument Compose(PdfDocument source, string pageRange)
+        {
+            PdfFile file = PdfFile.CreateEmpty();
+            file.ImportPages(source._file, pageRange, 0);
+            return new PdfDocument(file);
         }
 
         /// <summary>

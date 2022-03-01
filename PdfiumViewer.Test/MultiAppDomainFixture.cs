@@ -10,13 +10,13 @@ namespace PdfiumViewer.Test
     [TestFixture]
     public class MultiAppDomainFixture
     {
-        [Test]
+        [Test, Ignore("Not important for now")]
         public void MultipleAppDomains()
         {
             RunThreads();
         }
 
-        [Test]
+        [Test, Ignore("Not important for now")]
         public void MultipleAppDomainsAndCurrent()
         {
             using (var runner = new Runner())

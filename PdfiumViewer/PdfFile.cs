@@ -38,6 +38,24 @@ namespace PdfiumViewer
             LoadDocument(document);
         }
 
+        private PdfFile()
+        {
+
+        }
+
+        public static PdfFile CreateEmpty()
+        {
+            PdfLibrary.EnsureLoaded();
+
+            var document = NativeMethods.FPDF_CreateNewDocument();
+            if (document == IntPtr.Zero)
+                throw new PdfException((PdfError)NativeMethods.FPDF_GetLastError());
+
+            var pdfFile = new PdfFile();
+            pdfFile.LoadDocument(document);
+            return pdfFile;
+        }
+
         public PdfBookmarkCollection Bookmarks { get; private set; }
 
         public bool RenderPDFPageToDC(int pageNumber, IntPtr dc, int dpiX, int dpiY, int boundsOriginX, int boundsOriginY, int boundsWidth, int boundsHeight, NativeMethods.FPDF flags)
@@ -553,16 +571,24 @@ namespace PdfiumViewer
             }
         }
 
-        public void DeletePage (int pageNumber)
+        public void DeletePage(int pageNumber)
         {
             NativeMethods.FPDFPage_Delete(_document, pageNumber);
         }
 
-        public void RotatePage (int pageNumber, PdfRotation rotation)
+        public void RotatePage(int pageNumber, PdfRotation rotation)
         {
             using (var pageData = new PageData(_document, _form, pageNumber))
             {
                 NativeMethods.FPDFPage_SetRotation(pageData.Page, rotation);
+            }
+        }
+
+        public PdfRotation GetPageRotation(int pageNumber)
+        {
+            using (var pageData = new PageData(_document, _form, pageNumber))
+            {
+                return NativeMethods.FPDFPage_GetRotation(pageData.Page);
             }
         }
 
@@ -649,6 +675,29 @@ namespace PdfiumViewer
             }
 
             return null;
+        }
+
+        public void ImportPages(PdfFile source, string pageRange, int startDestIndex)
+        {
+            if (!NativeMethods.FPDF_ImportPages(_document, source._document, pageRange, startDestIndex))
+            {
+                throw new PdfException((PdfError)NativeMethods.FPDF_GetLastError());
+            }
+        }
+
+        public void CopyPages(string pageRange, int startDestIndex)
+        {
+            using (var tempFile = CreateEmpty())
+            {
+                if (!NativeMethods.FPDF_ImportPages(tempFile._document, _document, pageRange, 0))
+                {
+                    throw new PdfException((PdfError)NativeMethods.FPDF_GetLastError());
+                }
+                if (!NativeMethods.FPDF_ImportPages(_document, tempFile._document, null, startDestIndex))
+                {
+                    throw new PdfException((PdfError)NativeMethods.FPDF_GetLastError());
+                }
+            }
         }
 
         public void Dispose()

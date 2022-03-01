@@ -50,6 +50,14 @@ namespace PdfiumViewer
             }
         }
 
+        public static IntPtr FPDF_CreateNewDocument()
+        {
+            lock (LockString)
+            {
+                return Imports.FPDF_CreateNewDocument();
+            }
+        }
+
         public static void FPDF_CloseDocument(IntPtr document)
         {
             lock (LockString)
@@ -481,6 +489,14 @@ namespace PdfiumViewer
             }
         }
 
+        public static PdfRotation FPDFPage_GetRotation(IntPtr page)
+        {
+            lock (LockString)
+            {
+                return (PdfRotation)Imports.FPDFPage_GetRotation(page);
+            }
+        }
+
         #region Save / Edit Methods
 
         public static void FPDFPage_SetRotation(IntPtr page, PdfRotation rotation)
@@ -560,6 +576,14 @@ namespace PdfiumViewer
             lock (LockString)
             {
                 Imports.FPDF_FFLDraw(form, bitmap, page, start_x, start_y, size_x, size_y, rotate, flags);
+            }
+        }
+
+        public static bool FPDF_ImportPages(IntPtr destDoc, IntPtr srcDoc, string pageRange, int index)
+        {
+            lock (LockString)
+            {
+                return Imports.FPDF_ImportPages(destDoc, srcDoc, pageRange, index);
             }
         }
         #endregion
@@ -822,7 +846,7 @@ namespace PdfiumViewer
             public static extern IntPtr FPDF_CreateNewDocument();
 
             [DllImport("pdfium.dll")]
-            public static extern IntPtr FPDFPageObj_NewImgeObj(IntPtr document);
+            public static extern IntPtr FPDFPageObj_NewImageObj(IntPtr document);
 
             [DllImport("pdfium.dll")]
             public static extern bool FPDFImageObj_SetBitmap(IntPtr pages, int count, IntPtr imageObject, IntPtr bitmap);
