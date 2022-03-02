@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyInformationalVersion("0.13.2")]
+[assembly: AssemblyInformationalVersion("0.13.6")]
 
 [assembly: AssemblyTitle("PdfViewer")]
 [assembly: AssemblyDescription("")]

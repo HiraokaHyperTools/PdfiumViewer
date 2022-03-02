@@ -647,6 +647,16 @@ namespace PdfiumViewer
         }
 
         /// <summary>
+        /// Create empty document.
+        /// </summary>
+        /// <returns>New document</returns>
+        public static PdfDocument CreateEmpty()
+        {
+            PdfFile file = PdfFile.CreateEmpty();
+            return new PdfDocument(file);
+        }
+
+        /// <summary>
         /// Get metadata information from the PDF document.
         /// </summary>
         /// <returns>The PDF metadata.</returns>
