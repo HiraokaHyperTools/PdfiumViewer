@@ -19,6 +19,7 @@ namespace PdfiumViewer.Test
         private static PdfDocument ExR90() => PdfDocument.Load(new MemoryStream(Resources.ExR90, false));
         private static PdfDocument ExR180() => PdfDocument.Load(new MemoryStream(Resources.ExR180, false));
         private static PdfDocument ExR270() => PdfDocument.Load(new MemoryStream(Resources.ExR270, false));
+        private static PdfDocument ExNoInfo() => PdfDocument.Load(new MemoryStream(Resources.ExNoInfo, false));
 
         [Test]
         public void LoadFromStream()
@@ -96,6 +97,21 @@ namespace PdfiumViewer.Test
             ex123.Save(TempUtil.ForPdf("123ABC.pdf"));
 
             ex123.Dispose();
+        }
+
+        [Test]
+        public void ImportPages2()
+        {
+            var exNoInfo = ExNoInfo();
+            var ex1 = Ex1();
+
+            Assert.That(exNoInfo.PageCount, Is.EqualTo(1));
+            exNoInfo.ImportPages(ex1, "1", 1);
+            Assert.That(exNoInfo.PageCount, Is.EqualTo(2));
+
+            exNoInfo.Save(TempUtil.ForPdf("NoInfo1.pdf"));
+
+            exNoInfo.Dispose();
         }
 
         [Test]
