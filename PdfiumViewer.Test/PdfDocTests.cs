@@ -100,7 +100,7 @@ namespace PdfiumViewer.Test
         }
 
         [Test]
-        public void ImportPages2()
+        public void ImportPagesDestHasNoInfo()
         {
             var exNoInfo = ExNoInfo();
             var ex1 = Ex1();
