@@ -347,7 +347,7 @@ namespace PdfiumViewer
                         0, 0, width, height,
                         (int)rotate,
                         FlagsToFPDFFlags(flags),
-                        (flags & PdfRenderFlags.Annotations) != 0
+                        false
                     );
 
                     if (!success)

@@ -3,14 +3,14 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyInformationalVersion("0.13.7")]
+[assembly: AssemblyInformationalVersion("0.13.8")]
 
 [assembly: AssemblyTitle("PdfViewer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("kenjiuno, pvginkel")]
 [assembly: AssemblyProduct("PdfViewer")]
-[assembly: AssemblyCopyright("Pieter van Ginkel © 2012-2017, kenjiuno © 2021-2023")]
+[assembly: AssemblyCopyright("kenjiuno © 2021-2024, Pieter van Ginkel © 2012-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
